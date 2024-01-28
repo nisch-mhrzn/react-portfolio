@@ -1,11 +1,11 @@
 import { useState, useEffect} from "react";
-import { Navbar,Container } from "react-bootstrap";
+import { Navbar,Container,Nav} from "react-bootstrap";
 import logo from "../assests/img/logo.svg";
 import navIcon from "../assests/img/nav-icon1.svg";
 import navIcon2 from "../assests/img/nav-icon2.svg";
 import navIcon3 from "../assests/img/nav-icon3.svg";
 
-export const NavBar = () => {
+const NavBar = () => {
     const [activeLink,setActiveLink] =useState('home');
     const [scrolled,seScrolled] = useState(false);
     useEffect(() => {
@@ -66,3 +66,4 @@ export const NavBar = () => {
     </Navbar>
   );
 };
+export  default NavBar;
